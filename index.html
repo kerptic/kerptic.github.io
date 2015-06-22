@@ -2,4 +2,24 @@
 <head>
 <title>Kerptic Project's</title>
 <link rel="stylesheet" href="$tyle.css"/>
+<script Language="JavaScript">
+function NavTo()
+{
+window.location = document.forms[0].NavBox.value
+}
+</script>
 </head>
+<html>
+<body>
+<div id="logo">Kerptic Project's</div>
+<div id="box">
+<p><b>Pick a Project of mine, below:</b></p>
+<form method="POST" action="index.htm">
+<p><select name="NavBox" onChange=NavTo()>
+<option selected value="index.html">---Select Project---</option>
+<option value="http://kerptic.github.io/">Coming Soonish...</option>
+</select></p>
+</form>
+</div>
+</body>
+</html>
